@@ -1,0 +1,97 @@
+body {
+    margin: 0 auto;
+    background-color: pink;
+    width: 100vw;
+    height: 100vh;
+}
+
+#container-fluid {
+    display: flex;
+    flex-direction: column;
+    /* margin: 20px; */
+    align-items: center;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    left: 0px;
+}
+
+#landing-text {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#game-title {
+    font-size: 200px;
+    color: green;
+}
+
+#landing-pg-btns {
+    float: left;
+}
+
+
+#cards {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 30px;
+    /* background-color: green; */
+    /* overflow: hidden; */
+    justify-content: center;
+    width: 90vw;
+    padding: 20px;
+}
+
+.card {
+    width: 12vw;
+    height: 13vw;
+    border: 0.5px solid gray;
+}
+
+
+
+
+#lives {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-flow: row nowrap;
+    flex-shrink: 0;
+    gap: 30px;
+    flex: 1;
+    align-items: center;
+    /* background-color: red; */
+    bottom: 0
+    
+}
+
+#lives > div {
+    /* width: 25vw; */
+    /* height: 10vh; */
+    border: 0.5px solid gray;
+}
+
+#popup {
+    position: absolute;
+    width: 400px;
+    height: 100px;
+    background-color: red;
+
+    top: calc(50% - 50px);
+    left: calc(50% - 200px);
+}
+
+
+
+.card:not(.flipped) > .card-display {
+    display: none;
+}
+
+.card.flipped > .card-display {
+    display: block;
+}
