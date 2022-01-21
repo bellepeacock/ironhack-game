@@ -1,11 +1,47 @@
-const cardToInsert = document.createElement('div');
-const node = document.createTextNode('content…');
-cardToInsert.classList.add('card');
-cardToInsert.classList.add('a');
-cardToInsert.setAttribute("id", "card1");
-cardToInsert.appendChild(node);
-const element = document.getElementById("cards");
-element.appendChild(cardToInsert);
+const arrayOfCards = [
+    {name: "QUEEN", id: 'card-1', class: 'a'},
+    {name: "KING", id: 'card-2', class: 'b'}, 
+    {name: "q", id: 'card-3', class: 'c'}, 
+    {name: "w", id: 'card-4', class: 'd'}, 
+    {name: "e", id: 'card-5', class: 'e'}, 
+    {name: "r", id: 'card-6', class: 'f'}, 
+    {name: "t", id: 'card-7', class: 'g'}, 
+    {name: "y", id: 'card-8', class: 'h'}, 
+    {name: "u", id: 'card-9', class: 'i'}, 
+    {name: "i", id: 'card-10', class: 'j'}, 
+    {name: "o", id: 'card-11', class: 'k'}, 
+    {name: "KG", id: 'card-12', class: 'l'}, 
+    {name: "Qb", id: 'card-13', class: 'a'},
+    {name: "KIeeG", id: 'card-14', class: 'b'}, 
+    {name: "QUrrEEN", id: 'card-15', class: 'c'}, 
+    {name: "Kff", id: 'card-16', class: 'd'}, 
+    {name: "QUNff", id: 'card-17', class: 'e'}, 
+    {name: "BBB", id: 'card-18', class: 'f'}, 
+    {name: "QQQQQQQ", id: 'card-19', class: 'g'}, 
+    {name: "KKK", id: 'card-20', class: 'h'}, 
+    {name: "QNEEEE", id: 'card-21', class: 'i'}, 
+    {name: "OOO", id: 'card-22', class: 'j'}, 
+    {name: "SSSS", id: 'card-23', class: 'k'}, 
+    {name: "KWWWW", id: 'card-24', class: 'l'}, 
+]
+
+const shuffle = (arr) => arr.sort((a, b) => 0.5 - Math.random());
+
+shuffle(arrayOfCards);
+
+arrayOfCards.forEach(card => {
+    const cardToInsert = document.createElement('div');
+    const node = document.createTextNode(card.name); // this will be instead of img
+    cardToInsert.classList.add('card');
+    cardToInsert.classList.add(card.class);
+    cardToInsert.setAttribute("id", card.id);
+//     const img = document.createElement("img")
+// img.setAttribute("src", "path to image")
+// cardToInsert.appendChild(img)
+    cardToInsert.appendChild(node);
+    const element = document.getElementById("cards");
+    element.appendChild(cardToInsert);
+})
 
 
 // popups, card holders and links created

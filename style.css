@@ -87,11 +87,11 @@ body {
 }
 
 
-
+/* need to change the names here to match the new ones we made - the content */
 .card:not(.flipped) > .card-display {
     display: none;
 }
 
-.card.flipped > .card-display {
+.card.flipped > .card-display{
     display: block;
 }
