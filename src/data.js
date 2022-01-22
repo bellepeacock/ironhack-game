@@ -1,5 +1,26 @@
-// let cardArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
-
-//let cardArray = g
-
-
+const arrayOfCards = [
+    {img: "src/images/annabelle.jpeg", id: 'card-1', class: 'a'},
+    {img: "src/images/babyj.jpeg", id: 'card-2', class: 'b'}, 
+    {img: "src/images/bear.jpeg", id: 'card-3', class: 'c'}, 
+    {img: "src/images/creeper.jpeg", id: 'card-4', class: 'd'}, 
+    {img: "src/images/crow.jpeg", id: 'card-5', class: 'e'}, 
+    {img: "src/images/demonkid.jpeg", id: 'card-6', class: 'f'}, 
+    {img: "src/images/ghost.jpeg", id: 'card-7', class: 'g'}, 
+    {img: "src/images/king.jpeg", id: 'card-8', class: 'h'}, 
+    {img: "src/images/red.jpeg", id: 'card-9', class: 'i'}, 
+    {img: "src/images/trunch.jpeg", id: 'card-10', class: 'j'}, 
+    {img: "src/images/wicker.jpeg", id: 'card-11', class: 'k'}, 
+    {img: "src/images/witch.jpeg", id: 'card-12', class: 'l'}, 
+    {img: "src/images/annabelle.jpeg", id: 'card-13', class: 'a'},
+    {img: "src/images/babyj.jpeg", id: 'card-14', class: 'b'}, 
+    {img: "src/images/bear.jpeg", id: 'card-15', class: 'c'}, 
+    {img: "src/images/creeper.jpeg", id: 'card-16', class: 'd'}, 
+    {img: "src/images/crow.jpeg", id: 'card-17', class: 'e'}, 
+    {img: "src/images/demonkid.jpeg", id: 'card-18', class: 'f'}, 
+    {img: "src/images/ghost.jpeg", id: 'card-19', class: 'g'}, 
+    {img: "src/images/king.jpeg", id: 'card-20', class: 'h'}, 
+    {img: "src/images/red.jpeg", id: 'card-21', class: 'i'}, 
+    {img: "src/images/trunch.jpeg", id: 'card-22', class: 'j'}, 
+    {img: "src/images/wicker.jpeg", id: 'card-23', class: 'k'}, 
+    {img: "src/images/witch.jpeg", id: 'card-24', class: 'l'}, 
+]
