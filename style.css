@@ -71,22 +71,54 @@ body {
 
 #landing-pg-btns {
     float: left;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-direction: row;
     flex-shrink: 0;  
     gap: 50px; 
+    font-family: titleFont;
+    font-size: 50px;
+    background-color: none;
+    text-decoration: none;
+    color: #ef85c3;
+    text-decoration: none;
+    bottom: 0;
 }
 
 .button a { 
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center; 
     bottom: 0;
     font-family: titleFont;
     font-size: 50px;
     color: #ef85c3;
     text-decoration: none;
 }
+
+#start-game {
+    /* float: left; */
+    /* justify-content: center;
+    flex-direction: row;
+    flex-shrink: 0;   */
+    /* gap: 50px;  */
+    font-family: titleFont;
+    font-size: 50px;
+    background-color: none;
+    color: #ef85c3;
+    text-decoration: none;
+    bottom: 0;
+}
+
+
+
+#btn-PlayAgain {
+    display: flex;
+    align-items: center; 
+    bottom: 0;
+    font-family: titleFont;
+    font-size: 50px;
+    background-color: none;
+    color: #ef85c3;
+    text-decoration: none;
+    z-index: 3;
+} 
 
 
 #cards {

@@ -55,11 +55,14 @@ const displayPopup = (popupType) => {
 const displayButton = () => {
     const button = document.createElement('button');
     button.setAttribute('id', 'btn-PlayAgain');
-    button.setAttribute('class', 'button');
-    button.setAttribute('class', 'playAgain');
+    button.classList.add('button');
+    button.classList.add('playAgain');
+    // button.setAttribute('class', 'button');
+    // button.setAttribute('class', 'playAgain');
     button.innerText = "Play again !";
     document.body.appendChild(button);
-    
+    button.addEventListener("click", function(){location.reload(); });
+      
 }
 
 // hiding / showing cards and popups. Links to arrays.
@@ -166,7 +169,9 @@ const loseALife = () => {
 
 };
 
+
 const loseTheGame = () => {
     displayPopup('gameOver');
     displayButton('btn-PlayAgain');
+
 };
