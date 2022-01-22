@@ -119,15 +119,23 @@ cards.forEach(card => {
 
         } else {
 
-            const popup = displayPopup('tryAgain');
+            let livesDiv = document.getElementsByClassName('life');
+
             failedMatches += 1;
 
+            if (livesDiv.length === 1) {
+                livesDiv[0].remove();
+                loseTheGame();
+                return;
+            } else {
+
+            const popup = displayPopup('tryAgain');
+ 
             console.log('failedMatches', failedMatches)
 
             if (failedMatches % 3 === 0) {
                 loseALife();
-            }
-
+            };
             
             setTimeout(() => {
                 hidePopup(popup)
@@ -135,7 +143,7 @@ cards.forEach(card => {
                 hideCard(cardA)
                 cardA = null;
             }, 1000);
-
+            }   
         };
     })
 })
@@ -149,21 +157,12 @@ const winTheGame = () => {
     displayButton('btn-PlayAgain');
 }
 
-
 const loseALife = () => {
 
     let livesDiv = document.getElementsByClassName('life')
-
-    if (livesDiv.length === 1) {
-        livesDiv[0].remove();
-        loseTheGame();
-
-    } else {
         livesDiv[0].remove()
-    }
 
     console.log(livesDiv)
-    // remove this div
 
 };
 
