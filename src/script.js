@@ -18,7 +18,6 @@ arrayOfCards.forEach(card => {
     element.appendChild(cardToInsert);
 })
 
-
 // popups, card holders and links created
 
 let cardA = null;
